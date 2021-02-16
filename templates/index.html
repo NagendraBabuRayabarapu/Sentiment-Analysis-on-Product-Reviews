@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project By Nagendra,Rahul,Harish</title>
+</head>
+
+<body>
+    <div class="input">
+        <h1 align="center">Predict Sentiment Analysis</h1>
+        <form action="{{ url_for('predict')}}" method="post" align="center">
+            <textarea type="text" name="review" placeholder="review" required="required" /></textarea>
+            <br>
+            <button type="submit" class="btn" align="center">Predict</button>
+        </form>
+        <br>
+        <br>
+
+        <h1 align="center">
+            {{ prediction_text }}
+            <display type="image" src=img name=img class="image" placeholder=img alt="image" />
+        </h1>
+    </div>
+
+</body>
+
+</html>
