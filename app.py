@@ -42,13 +42,13 @@ def predict():
     
 
     if finalpred >= 0.6:
-        res = "Hurrah! That is " + str(round(finalpred,2)*100) +"%"+ "  POSITIVE"
+        res = "Hurrah! That is " + str(round(finalpred,2)*100) +"%"+ "  POSITIVE🤩"
         src = "postive.jpg"
     elif finalpred <= 0.4:
-        res = "Oops! That is " + str(100 - round(finalpred,2)*100)+ "%"+ "  NEGATIVE"
+        res = "Oops! That is " + str(100 - round(finalpred,2)*100)+ "%"+ "  NEGATIVE😥"
         src = "negative.jpg"
     else:
-        res = "Can't say  That seems NEUTRAL"
+        res = "Can't say  That seems NEUTRAL🤔"
         src = "neutral.jpg"
     
     return render_template('index.html',prediction_text='{}'.format(res), alt= "nothing")
