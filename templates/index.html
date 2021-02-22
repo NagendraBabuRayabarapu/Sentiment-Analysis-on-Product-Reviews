@@ -7,20 +7,28 @@
 </head>
 
 <body>
+
     <div class="input">
-        <h1 align="center">Predict Sentiment Analysis</h1>
+        <div align="center">
+            <img width="100px" src="https://jntuhcej.ac.in/images_new/jntuhlogo1.png" align="center" alt="JNTUH LOGO">
+        </div>
+        <h1 align="center" class="font-40  text-uppercase" style="color: #0004ff; line-height: 40px"><strong>JNTUH COLLEGE OF ENGINEERING JAGTIAL</h1>
+      <h1 align="center" class="font-26  text-uppercase" style="color: #26b9a6; line-height: 30px"><strong>DEPARTMENT OF ELECTRONICS AND COMMUNICATION ENGINEERING</h1><br>
+            <h2 align = "center" class="font-20 text-uppercase" style="color: royalblue; line-height: 20px;">Sentiment Analysis on Product Reviews Project Demo</h2>
         <form action="{{ url_for('predict')}}" method="post" align="center">
-            <textarea type="text" name="review" placeholder="review" required="required" /></textarea>
+            <textarea style="height:100px;width: 400px; font: size 20px; ;" type="text" name="review" placeholder="Write You Review Here" required="required"></textarea>
             <br>
             <button type="submit" class="btn" align="center">Predict</button>
         </form>
         <br>
         <br>
 
-        <h1 align="center">
+        <h1 align="center" size= "20px" style="font-size: 40px">
             {{ prediction_text }}
         </h1>
     </div>
+    <br><br><br>
+    <img src="details.jpg" alt="Project By......In Guidance With...."  align="center" style="height: filled; width: filled; align: center; padding: 0 0 0 0" />
 
 </body>
 
