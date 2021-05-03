@@ -6,8 +6,7 @@
     <title>Sentiment analyser</title>
 </head>
 
-<body style="background-image: url('back.jpg')">
-        <img src="logo.jpg" width="device-width, initial-scale">
+<body>
         <h2 align = "center" class="font-20 text-uppercase" style="color: red; line-height: 20px; padding-top = "20px" ;padding-bottom = "100px"">Sentiment Analysis on Product Reviews Project Demo</h2>
         <form action="{{ url_for('predict')}}" method="post" align="center">
             <textarea style="height:100px;width: 400px; font: size 20px; ;" type="text" name="review" placeholder="Write You Review Here" required="required"></textarea>
